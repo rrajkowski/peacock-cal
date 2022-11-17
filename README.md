@@ -1,7 +1,9 @@
 # peacock-cal
 
 ### endpoint to take params and return and email .ics file
-heroku.com/cal
+http://localhost:3000/v1/send
+or live
+http://localhost:3000/v1/send
 
 #### Params
 
