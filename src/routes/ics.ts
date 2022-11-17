@@ -4,18 +4,18 @@ import Route from '../interfaces/routes';
 /**
  * @swagger
  *
- * /hello:
+ * /ics:
  *   get:
- *     description: Fetches the current status of the server
+ *     description: Creates and returns .ics file
  *     produces:
  *       - application/json
  *     responses:
  *       200:
- *         description: If the server is fully operational.
+ *         description: Creates and returns .ics file.
  */
-class HelloRoute implements Route {
+class ICSRoute implements Route {
 
-	public path = "/hello";
+	public path = "/ics";
 	public router = Router();
 	public versions = [1];
 
@@ -25,9 +25,9 @@ class HelloRoute implements Route {
 
 	private initializeRoutes() {
 		this.router.get('/', (req, res) => {
-			res.json({ hello: "world" });
+			res.json({ ics: "success" });
 		});
 	}
 }
 
-export default HelloRoute;
+export default ICSRoute;

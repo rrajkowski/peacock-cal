@@ -1,11 +1,11 @@
 import 'dotenv/config';
 
 import App from './app';
-import HelloRoute from './routes/hello';
+import ICSRoute from './routes/ics';
 import SendRoute from './routes/send';
 
 const app = new App([
-	new HelloRoute(),
+	new ICSRoute(),
 	new SendRoute()
 ]);
 
