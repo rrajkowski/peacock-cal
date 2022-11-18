@@ -5,15 +5,14 @@ PRODID:adamgibbons/ics
 METHOD:PUBLISH
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:672606202292425@peacocktv
+UID:774548371824560@peacocktv
 SUMMARY:Boston College v. Notre Dame
-DTSTAMP:20221118T080400Z
+DTSTAMP:20221118T082100Z
 DTSTART:20221119T193000Z
 DTEND:20221119T233000Z
 DESCRIPTION:The Fighting Irish welcome the Eagles for a showdown in South B
-	end.
-URL:https://www.peacocktv.com/watch/asset/sports/boston-college-vs.-notre-d
-	ame/bebad629-0c13-365a-923e-dce045f8d57c
+	end.\nhttps://peacocktv.com
+URL:https://peacocktv.com
 LOCATION:PeacockTV
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 ATTENDEE;RSVP=TRUE;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ruben.rajkowsk

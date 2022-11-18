@@ -73,9 +73,9 @@ class ICSRoute implements Route {
 
 			const now = moment().utc();
 			const title = req.query.title || 'Reminder to watch PeacockTV';
-			const description = req.query.description || 'Check back at the scheduled time to catch your show!';
 			const location = req.query.location || 'PeacockTV';
-			const url = req.query.url || 'https://peacocktv.com';
+			const url = (req.query.url && req.query.url.toString().trim()) || 'https://peacocktv.com';
+			const description = req.query.description +'\n'+ url || 'Click the link below to watch: \n'+ url;
 			const start = req.query.start || now.toISOString();
 			const end = req.query.end || now.add(2, 'hours').toISOString();
 			//force array, if only 1
@@ -87,7 +87,7 @@ class ICSRoute implements Route {
 			event.description = description;
 			event.start = moment(start).format('YYYY-M-D-H-m').split("-").map(Number);
 			event.end = moment(end).format("YYYY-M-D-H-m").split("-").map(Number);
-			event.url = url.toString().trim();
+			event.url = url;
 			event.location = location.toString().trim();
 			// loop through attendees
 			attendees.forEach((email: string) => {
