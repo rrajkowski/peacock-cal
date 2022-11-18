@@ -6,12 +6,12 @@ import Route from '../interfaces/routes';
  *
  * /send:
  *   get:
- *     description: Fetches the current status of the server
+ *     description: Gmail + Nodemailer to send email
  *     produces:
  *       - application/json
  *     responses:
  *       200:
- *         description: If the server is fully operational.
+ *         description: Gmail + Nodemailer to send email.
  */
 class SendRoute implements Route {
 
@@ -25,7 +25,7 @@ class SendRoute implements Route {
 
 	private initializeRoutes() {
 		this.router.get('/', (req, res) => {
-			res.json({ send: "success" });
+			res.json({ mocksend: "success" });
 		});
 	}
 }

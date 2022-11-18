@@ -1,31 +1,29 @@
 # peacock-cal
 
 ### endpoint to take params and return and email with .ics file
-http://localhost:3000/v1/send
-or live
-https://peacock-cal.herokuapp.com/v1/send
+Local:
+http://localhost:3000/v1/ics
+Prod:
+https://peacock-cal.herokuapp.com/v1/ics
 
 #### Params
 
 - `title (string)`:  Event title, Email subject
 - `start (datetime)`: UTC ISO 8601
 - `end (datetime)`: UTC ISO 8601
-- `url (string)`: link to event
-- `body (string)`: Email body
-- `location (string)`: Event Address
+- `alarm (boolean)`: Defaults to 15m
+- `url (string)`: Link to event
+- `location (string)`: Event address
 - `attendees (array)`: Email address
 
 
-http://localhost:3000/v1/ics
+http://localhost:3000/v1/send
 or live
-https://peacock-cal.herokuapp.com/v1/ics
+https://peacock-cal.herokuapp.com/v1/send
 
 #### Params
 
-- `title`:  Event title, Email subject
-- `start`: DateTime (utc iso 8601)
-- `end`: DateTime (utc iso 8601)
-- `url`: link to event (location)
+- `tbd`: tbd
 
 
 #### Start app
