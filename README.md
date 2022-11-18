@@ -9,9 +9,10 @@ https://peacock-cal.herokuapp.com/v1/ics
 #### Params
 
 - `title (string)`:  Event title, Email subject
+- `description (string)`:  Event description
 - `start (datetime)`: UTC ISO 8601
 - `end (datetime)`: UTC ISO 8601
-- `alarm (boolean)`: Defaults to 15m
+- `alarm (number)`: Defaults to 15, in minutes
 - `url (string)`: Link to event
 - `location (string)`: Event address
 - `attendees (array)`: Email address

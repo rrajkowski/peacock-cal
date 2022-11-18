@@ -9,3 +9,8 @@
 	const regex = new RegExp(`^[ \\t]{0,${indent}}`, 'gm');
 	return str.replace(regex, '');
 }
+
+ /* Generates a unique numeric length integer used for 'uid' */
+ export function randomizer(length: number) : string {
+	return Math.floor(Math.pow(10, length-1) + (Math.random() * 9 * Math.pow(10, length-1))).toString();
+ }
